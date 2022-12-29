@@ -4,10 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
-    <div>Dawid Bieniaszewski</div>
-
-    
+      <div>Wiktoria Leś</div>
     </div>
   );
 }
