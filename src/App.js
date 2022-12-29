@@ -7,7 +7,7 @@ function App() {
       <div>Wiktoria Leśniarek</div>
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
-
+      <div>Adam Borzęda</div>
       <div>Siemanko, witam w mojej kuchni</div>
       <div>Toster w wannie, niemożliwe</div>
     </div>
