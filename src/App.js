@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <div>Wiktoria Leśniarek</div>
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
 
