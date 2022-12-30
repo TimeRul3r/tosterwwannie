@@ -2,9 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  let nameOne = "Wiktoria Leśniarek"
   return (
-    <div className="App">
-      <div>Wiktoria Leśniarek</div>
+    <div>
+      <div>
+        {nameOne}
+      </div>
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
       <div>Adam Borzęda</div>
