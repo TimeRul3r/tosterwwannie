@@ -2,7 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  let nameOne = "Wiktoria Leśniarek"
+  const nameOne = "Wiktoria Leśniarek"
+  const imie = "Adam"
   return (
     <div>
       <div>
@@ -10,7 +11,9 @@ function App() {
       </div>
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
-      <div>Adam Borzęda</div>
+      <div>
+        {imie}
+      </div>
       <div>Siemanko, witam w mojej kuchni</div>
       <div>Toster w wannie, niemożliwe</div>
     </div>
