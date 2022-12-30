@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const nameOne = "Wiktoria Leśniarek"
   const imie = "Adam"
+  const nametwo = "Dawid Bieniaszewski"
   return (
     <div>
       <div>
@@ -13,6 +14,9 @@ function App() {
       <div>Karolina Sandomierz</div>
       <div>
         {imie}
+      </div>
+      <div>
+        {nametwo}
       </div>
       <div>Siemanko, witam w mojej kuchni</div>
       <div>Toster w wannie, niemożliwe</div>
