@@ -6,6 +6,10 @@ testmetody.toUpperCase();
 const updateName = (imie) => {
   const noweimie = imie + " 12345"
   return noweimie
+
+  const updateName = (nametwo) => {
+    const noweimie = nametwo + " Polska Górą!!1!"
+    return noweimie
 }
 function App() {
   const nameOne = "Wiktoria Leśniarek"
