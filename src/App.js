@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-let testmetody = "jakieśzdanie"
+const testmetody = "jakieśzdanie";
 testmetody.toUpperCase();
 
 function App() {
