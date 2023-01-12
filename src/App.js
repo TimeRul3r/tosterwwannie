@@ -3,7 +3,10 @@ import "./App.css";
 
 const testmetody = "jakieśzdanie";
 testmetody.toUpperCase();
-
+const updateName = (imie) => {
+  const noweimie = imie + " 12345"
+  return noweimie
+}
 function App() {
   const nameOne = "Wiktoria Leśniarek"
   const imie = "Adam"
