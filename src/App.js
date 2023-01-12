@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+let testmetody = "jakieśzdanie"
+testmetody.toUpperCase() = "JAKIEŚZDANIE"
+
 function App() {
   const nameOne = "Wiktoria Leśniarek"
   const imie = "Adam"
