@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-const testmetody = "jakieśzdanie";
-testmetody.toUpperCase();
+let testmetody = "jakieśzdanie";
+let testmetody1 = testmetody.toUpperCase();
+
 const updateName = (imie) => {
   const noweimie = imie + " 12345"
   return noweimie
