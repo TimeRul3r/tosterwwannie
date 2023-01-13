@@ -16,14 +16,17 @@ const updateAdam = (name) => {
   return text;
 }
   const updateName2 = (nametwo) => {
-    const noweimie = nametwo.slice(3,7) + " Polska Górą!!1!";
+    const noweimie = nametwo.slice(6,20) + " Polska Górą!!1!";
     
     return noweimie
 }
+const updatespace = () =>{ const spc = " "; return spc }
+
 function App() {
   const nameOne = "Wiktoria Leśniarek"
   const imie = "Adam Borzęda Architektura Informacji"
   const nametwo = "Dawid Bieniaszewski"
+  const nameinf = "Architektura"
   return (
     <div>
       <div>
@@ -34,9 +37,17 @@ function App() {
       <div>
         {updateAdam(imie)}
       </div>
-      <div>
+      <div id="Bieniaszewski">
+        <br/>
         {updateName2(nametwo)}
+        {updatespace(nametwo)}
+        {updateTimeRul3r(nametwo)}
+        {updatespace(nametwo)}
+        {updateAdam(nameinf)}
+        <br/> <br/>
+        
       </div>
+
       <div>Siemanko, witam w mojej kuchni</div>
       <div>Toster w wannie, niemożliwe</div>
     </div>
