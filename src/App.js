@@ -27,7 +27,7 @@ function App() {
         {imie}
       </div>
       <div>
-        {nametwo}
+        {updateName2(nametwo)}
       </div>
       <div>Siemanko, witam w mojej kuchni</div>
       <div>Toster w wannie, niemożliwe</div>
