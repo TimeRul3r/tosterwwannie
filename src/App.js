@@ -2,7 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 
 let testmetody = "jakieśzdanie";
-let testmetody1 = testmetody.toUpperCase();
+testmetody.toUpperCase();
+
+const updateTimeRul3r = (name) => {
+  const newname = name.toUpperCase();
+  return newname
+}
 
 const updateName = (imie) => {
   const noweimie = imie + " 12345"
@@ -19,7 +24,7 @@ function App() {
   return (
     <div>
       <div>
-        {nameOne}
+        {updateTimeRul3r(nameOne)}
       </div>
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
