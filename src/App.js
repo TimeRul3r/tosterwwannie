@@ -14,7 +14,8 @@ const updateName = (imie) => {
   return noweimie
 }
   const updateName2 = (nametwo) => {
-    const noweimie = nametwo + " Polska Górą!!1!"
+    const noweimie = nametwo.slice(3,7) + " Polska Górą!!1!";
+    
     return noweimie
 }
 function App() {
