@@ -9,9 +9,11 @@ const updateTimeRul3r = (name) => {
   return newname
 }
 
-const updateName = (imie) => {
-  const noweimie = imie + " 12345"
-  return noweimie
+const updateAdam = (name) => {
+  let text = name;
+  text = text.replaceAll("Architektura","Informacji");
+  text = text.replaceAll("architektura","informacji");
+  return text;
 }
   const updateName2 = (nametwo) => {
     const noweimie = nametwo.slice(3,7) + " Polska Górą!!1!";
@@ -20,7 +22,7 @@ const updateName = (imie) => {
 }
 function App() {
   const nameOne = "Wiktoria Leśniarek"
-  const imie = "Adam"
+  const imie = "Adam Borzęda Architektura Informacji"
   const nametwo = "Dawid Bieniaszewski"
   return (
     <div>
@@ -30,7 +32,7 @@ function App() {
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
       <div>
-        {imie}
+        {updateAdam(imie)}
       </div>
       <div>
         {updateName2(nametwo)}
