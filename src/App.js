@@ -35,7 +35,8 @@ function App() {
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
       <div>
-        {updateAdam(imie)}
+        {updateAdam(imie)}<br/>
+        {updateName2(imie)}
       </div>
       <div id="Bieniaszewski">
         <br/>
