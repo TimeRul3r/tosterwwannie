@@ -9,18 +9,19 @@ const updateTimeRul3r = (name) => {
   return newname
 }
 
-const updateAdam = (name) => {
-  let text = name;
-  text = text.replaceAll("Architektura","Informacji");
-  text = text.replaceAll("architektura","informacji");
-  return text;
+const UpdateAdam = (props) => { console.log (props)
+  let text = props;
+  text = props.name.replaceAll("Architektura","Informacji");
+  text = props.name.replaceAll("architektura","informacji");
+  return <div>{text}</div>;
 }
   const UpdateName2 = (props) => { console.log (props)
     const noweimie = props.name.slice(6,20) + " Polska Górą!!1!";
     
    
     return <div id="Bieniaszewski2">
-      {updateAdam (noweimie)}
+       <UpdateAdam name = {noweimie}/>
+     
       
     </div>
 }
@@ -43,7 +44,8 @@ function App() {
       <div>Dawid Bieniaszewski</div>
       <div>Karolina Sandomierz</div>
       <div>
-        {updateAdam(imie)}<br/>
+        
+        <UpdateAdam name = {imie}/>
 
       </div>
       <div id="Bieniaszewski">
@@ -51,7 +53,7 @@ function App() {
         {updatespace(nametwo)}
         {updateTimeRul3r(nametwo)}
         {updatespace(nametwo)}
-        {updateAdam(nameinf)}
+        
 
         <UpdateName2 name = {nametwo}/>
         <br/> <br/>
