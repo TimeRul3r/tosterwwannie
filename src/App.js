@@ -15,10 +15,13 @@ const updateAdam = (name) => {
   text = text.replaceAll("architektura","informacji");
   return text;
 }
-  const updateName2 = (nametwo) => {
+  const UpdateName2 = (nametwo) => {
     const noweimie = nametwo.slice(6,20) + " Polska Górą!!1!";
-    
-    return noweimie
+   
+    return <div id="Bieniaszewski2">
+      {updateAdam (noweimie)}
+      
+    </div>
 }
 const updatespace = () =>{ const spc = " "; return spc }
 
@@ -36,11 +39,11 @@ function App() {
       <div>Karolina Sandomierz</div>
       <div>
         {updateAdam(imie)}<br/>
-        {updateName2(imie)}
+        {UpdateName2(imie)}
       </div>
       <div id="Bieniaszewski">
         <br/>
-        {updateName2(nametwo)}
+        {UpdateName2(nametwo)}
         {updatespace(nametwo)}
         {updateTimeRul3r(nametwo)}
         {updatespace(nametwo)}
