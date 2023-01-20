@@ -15,14 +15,19 @@ const updateAdam = (name) => {
   text = text.replaceAll("architektura","informacji");
   return text;
 }
-  const UpdateName2 = (nametwo) => {
-    const noweimie = nametwo.slice(6,20) + " Polska Górą!!1!";
+  const UpdateName2 = (props) => { console.log (props)
+    const noweimie = props.name.slice(6,20) + " Polska Górą!!1!";
+    
    
     return <div id="Bieniaszewski2">
       {updateAdam (noweimie)}
       
     </div>
 }
+
+const object = {torun:123, inowcrolaw:111,gniezno:100}
+console.log("poland",object.torun )
+
 const updatespace = () =>{ const spc = " "; return spc }
 
 function App() {
@@ -39,15 +44,16 @@ function App() {
       <div>Karolina Sandomierz</div>
       <div>
         {updateAdam(imie)}<br/>
-        {UpdateName2(imie)}
+
       </div>
       <div id="Bieniaszewski">
         <br/>
-        {UpdateName2(nametwo)}
         {updatespace(nametwo)}
         {updateTimeRul3r(nametwo)}
         {updatespace(nametwo)}
         {updateAdam(nameinf)}
+
+        <UpdateName2 name = {nametwo}/>
         <br/> <br/>
         
       </div>
