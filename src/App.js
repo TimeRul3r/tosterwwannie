@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { Name } from "./components/atoms/Name";
 
 let testmetody = "jakieśzdanie";
 testmetody.toUpperCase();
@@ -15,16 +16,7 @@ const UpdateAdam = (props) => { console.log (props)
   text = props.name.replaceAll("architektura","informacji");
   return <div>{text}</div>;
 }
-  const UpdateName2 = (props) => { console.log (props)
-    const noweimie = props.name.slice(6,20) + " Polska Górą!!1!";
-    
-   
-    return <div id="Bieniaszewski2">
-       <UpdateAdam name = {noweimie}/>
-     
-      
-    </div>
-}
+
 
 const object = {torun:123, inowcrolaw:111,gniezno:100}
 console.log("poland",object.torun )
@@ -55,7 +47,7 @@ function App() {
         {updatespace(nametwo)}
         
 
-        <UpdateName2 name = {nametwo}/>
+        <Name name = {nametwo}/>
         <br/> <br/>
         
       </div>
