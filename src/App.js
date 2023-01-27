@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Name } from "./components/atoms/Name";
+import { Profile } from "./components/molecules/Profile";
 
 let testmetody = "jakieśzdanie";
 testmetody.toUpperCase();
@@ -10,12 +11,7 @@ const updateTimeRul3r = (name) => {
   return newname
 }
 
-const UpdateAdam = (props) => { console.log (props)
-  let text = props;
-  text = props.name.replaceAll("Architektura","Informacji");
-  text = props.name.replaceAll("architektura","informacji");
-  return <div>{text}</div>;
-}
+
 
 
 const object = {torun:123, inowcrolaw:111,gniezno:100}
@@ -30,31 +26,13 @@ function App() {
   const nameinf = "Architektura"
   return (
     <div>
-      <div>
-        {updateTimeRul3r(nameOne)}
-      </div>
-      <div>Dawid Bieniaszewski</div>
-      <div>Karolina Sandomierz</div>
-      <div>
+      
         
-        <UpdateAdam name = {imie}/>
+        <Profile name = {imie}/>
 
-      </div>
-      <div id="Bieniaszewski">
-        <br/>
-        {updatespace(nametwo)}
-        {updateTimeRul3r(nametwo)}
-        {updatespace(nametwo)}
-        
-
-        <Name name = {nametwo}/>
-        <br/> <br/>
-        
-      </div>
-
-      <div>Siemanko, witam w mojej kuchni</div>
-      <div>Toster w wannie, niemożliwe</div>
     </div>
+   
+    
   );
 }
 
