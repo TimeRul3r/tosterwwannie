@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Name } from "./components/atoms/Name";
-import { Profile } from "./components/molecules/Profile";
+import { Profile, Profile2 } from "./components/molecules/Profile";
 
 let testmetody = "jakieśzdanie";
 testmetody.toUpperCase();
@@ -29,6 +29,7 @@ function App() {
       
         
         <Profile name = {imie}/>
+        <Profile2 name = {nametwo}/>
 
     </div>
    
