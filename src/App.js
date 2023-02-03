@@ -28,11 +28,11 @@ function App() {
   return (
     <div>
       {users.map((user)=>{
-        return <div> {user.name} </div>
+        return <Profile name = {user.name}/>
       })} 
         
-        <Profile name = {users[0]}/>
-        <Profile2 name = {users[1]}/>
+        <Profile name = {users[0].name}/>
+        <Profile2 name = {users[1].name}/>
 
     </div>
    
