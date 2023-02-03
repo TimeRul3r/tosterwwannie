@@ -22,11 +22,14 @@ const updatespace = () =>{ const spc = " "; return spc }
 function App() {
 
 
-  const users = ["Dawid", "Adam", "Wiktoria"];
+  const users = [{name: "Dawid", age: 20, badges:[]}, {name: "Adam", age: 21, badges:[]},{name: "Wiktoria", age: 22, badges:[]}];
+  
 
   return (
     <div>
-      
+      {users.map((user)=>{
+        return <div> {user.name} </div>
+      })} 
         
         <Profile name = {users[0]}/>
         <Profile2 name = {users[1]}/>
