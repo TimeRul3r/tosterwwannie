@@ -20,16 +20,16 @@ console.log("poland",object.torun )
 const updatespace = () =>{ const spc = " "; return spc }
 
 function App() {
-  const nameOne = "Wiktoria Leśniarek"
-  const imie = "Adam Borzęda Architektura Informacji"
-  const nametwo = "Dawid Bieniaszewski"
-  const nameinf = "Architektura"
+
+
+  const users = ["Dawid", "Adam", "Wiktoria"];
+
   return (
     <div>
       
         
-        <Profile name = {imie}/>
-        <Profile2 name = {nametwo}/>
+        <Profile name = {users[0]}/>
+        <Profile2 name = {users[1]}/>
 
     </div>
    
