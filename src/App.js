@@ -19,6 +19,7 @@ console.log("poland",object.torun )
 
 const updatespace = () =>{ const spc = " "; return spc }
 
+
 function App() {
 
 
@@ -30,6 +31,11 @@ function App() {
       {users.map((user)=>{
         return <Profile name = {user.name}/>
       })} 
+       {users.map((user)=>{
+        return <Profile badges = {user.badges}/>
+      })} 
+
+      
         
         <Profile name = {users[0].name}/>
         <Profile2 name = {users[1].name}/>
