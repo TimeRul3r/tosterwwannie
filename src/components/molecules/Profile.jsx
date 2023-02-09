@@ -11,3 +11,4 @@ export const Profile2 = ({name}) => { console.log (name)
     
     return <div><Badges name = {name}/></div>;
   }
+
