@@ -42,9 +42,9 @@ function App() {
         return <Profile name = {user.badges}/>
       })} 
 
-  {badges23.map((xyz)=>{
-    return <Badges rank = {xyz.rank}/>
-  })} 
+  {/* {badges23.map((xyz)=>{ */}
+    {/* return <Badges rank = {xyz.rank}/> */}
+  {/* })}  */}
 
 
   
