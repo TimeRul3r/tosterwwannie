@@ -7,14 +7,14 @@ const users = [{name: "Dawid", age: 20, badges:[]}, {name: "Adam", age: 21, badg
 
 
 function App() {
-  const [liczba, ustawNowaLiczbe] = useState(0)
+  const [isopen, setisopen] = useState(true)
 
 
 
   return (
     <div>
       {users.map((user)=>{
-        return <Profile name = {user.name} liczba={liczba} ustawNowaLiczbe={ustawNowaLiczbe}/>
+        return <Profile name = {user.name} isopen={isopen} setisopen={setisopen}/>
       })} 
       
 
