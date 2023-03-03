@@ -6,6 +6,6 @@ export const Profile = ({name ,isopen, setisopen}) => {
 
     
     return <div><Name name = {name}/>
-      <button onMouseEnter={() =>  setisopen(isopen +1)}>Counter {isopen}</button>
+      <button onMouseEnter={() =>  setisopen(!isopen )}>Counter {isopen}</button>
     </div>;
   }
