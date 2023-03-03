@@ -1,6 +1,7 @@
 import { Badges } from "./Badges";
 
- export const Name = (props) => { console.log (props)
+ export const Name = (props) => { 
+   console.log (props)
     const noweimie = props.name + " Polska Górą!!1!";
     
    
