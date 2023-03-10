@@ -10,7 +10,7 @@ export const Round = ({round}) => {
       <div>
         dsads
         {/* Question to jest Component */}
-        <Question />
+        <Question text={round.question}/>
         {/* 1. Question */}
         {/* 2. Wylistować opcje */}
       </div>
