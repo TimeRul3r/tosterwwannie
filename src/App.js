@@ -1,8 +1,21 @@
 import "./App.css";
-import { Profile, Profile2 } from "./components/molecules/Profile";
+import { Round, Profile2 } from "./components/molecules/Round";
 import { useState } from "react";
 
-const users = [{name: "Dawid", age: 20, badges:[]}, {name: "Adam", age: 21, badges:[]},{name: "Wiktoria", age: 22, badges:[]}];
+const rounds = [
+  {
+    question: "Pytanie1",
+    options: [{
+      text: "odpowiedź",
+      isCorrect: false
+    }, 
+    {
+        text: "odpowiedź",
+        isCorrect: true
+      }
+    ]
+  }
+];
 
 
 
@@ -13,14 +26,10 @@ function App() {
 
   return (
     <div>
-      {users.map((user)=>{
-        return <Profile name = {user.name} isopen={isopen} setisopen={setisopen}/>
+      {rounds.map((round)=>{
+        return <Round name = {user.name} isopen={isopen} setisopen={setisopen} />
       })} 
-      
-
     </div>
-   
-    
   );
 }
 
