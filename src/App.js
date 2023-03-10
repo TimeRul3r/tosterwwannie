@@ -27,9 +27,12 @@ function App() {
   return (
     <div>
       {rounds.map((round)=>{
-        return <Round name = {user.name} isopen={isopen} setisopen={setisopen} />
+        return <Round round = {round} />
       })} 
     </div>
+
+    
+
   );
 }
 

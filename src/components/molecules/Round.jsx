@@ -2,8 +2,7 @@ import { Question } from "../atoms/Question";
 import { Option } from "../atoms/Option";
 import { useState } from "react";
 
-export const Round = ({round}) => { 
-
+export const Round = ({round}) => { console.log(round) 
 
     return (
       <div>
