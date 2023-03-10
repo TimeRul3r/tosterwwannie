@@ -3,11 +3,17 @@ import { Round, Profile2 } from "./components/molecules/Round";
 import { useState } from "react";
 
 const rounds = [
+  // To jest objekt
   {
+    // question = klucz 
+    // "Pytanie1" = wartość
     question: "Pytanie1",
-    options: [{
+    options: [
+      // To jest objekt
+    {
       text: "odpowiedź",
-      isCorrect: false
+      isCorrect: false,
+
     }, 
     {
         text: "odpowiedź",
@@ -15,14 +21,14 @@ const rounds = [
       }
     ]
   }
+  // 
 ];
+
 
 
 
 function App() {
   const [isopen, setisopen] = useState(true)
-
-
 
   return (
     <div>
@@ -30,9 +36,6 @@ function App() {
         return <Round round = {round} />
       })} 
     </div>
-
-    
-
   );
 }
 
