@@ -11,30 +11,69 @@ const rounds = [
     options: [
       // To jest objekt
     {
-      text: "odpowiedź",
+      text: "odpowiedź 1",
       isCorrect: false,
 
     }, 
     {
-        text: "odpowiedź",
+        text: "odpowiedź 2",
         isCorrect: true
       }
     ]
-  }
+  },
+  {
+    // question = klucz 
+    // "Pytanie1" = wartość
+    question: "Pytanie2",
+    options: [
+      // To jest objekt
+    {
+      text: "odpowiedź 1",
+      isCorrect: false,
+
+    }, 
+    {
+        text: "odpowiedź 2",
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    // question = klucz 
+    // "Pytanie1" = wartość
+    question: "Pytanie3",
+    options: [
+      // To jest objekt
+    {
+      text: "odpowiedź 1 ",
+      isCorrect: false,
+
+    }, 
+    {
+        text: "odpowiedź 2",
+        isCorrect: true
+      }
+    ]
+  },
   // 
 ];
 
 
 
 
+
+
+
 function App() {
-  const [isopen, setisopen] = useState(true)
+  const [currentRound, setCurrentRound] = useState(0)
+ 
+  const handleChooseOption = (isCorrect) => {
+    console.log("Wybrałem opcje ?", isCorrect)
+  }
 
   return (
     <div>
-      {rounds.map((round)=>{
-        return <Round round = {round} />
-      })} 
+      <Round round={rounds[currentRound]} chooseOption={handleChooseOption}  />
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import { Option } from "./Option";
 
-export const Question = ({text}) => { 
+export const Question = ({option, chooseOption}) => { 
     
    
    return (
-      <div>
-         {text}      
-      </div>
+      <button onClick={() => chooseOption(option.isCorrect)}>
+         {option.text}      
+      </button>
     )
 }

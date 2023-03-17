@@ -3,16 +3,19 @@ import { Option } from "../atoms/Option";
 import { useState } from "react";
 
 // Component
-export const Round = ({round}) => { 
+export const Round = ({round, chooseOption}) => { 
+    console.log(round)
 
 
     return (
       <div>
-        dsads
+        <h1>{round.question}</h1>
         {/* Question to jest Component */}
-        <Question />
-        {/* 1. Question */}
-        {/* 2. Wylistować opcje */}
+        {round.options.map(option => {
+
+          return <Question option={option} chooseOption={chooseOption}  />
+        })}
+        
       </div>
     );
 }
