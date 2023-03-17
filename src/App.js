@@ -68,7 +68,10 @@ function App() {
   const [currentRound, setCurrentRound] = useState(0)
  
   const handleChooseOption = (isCorrect) => {
-    console.log("Wybrałem opcje ?", isCorrect)
+    console.log("Wybrałem opcje ?", isCorrect);
+
+    if(isCorrect && currentRound < rounds.length -1)
+            setCurrentRound((prev) => prev + 1);
   }
 
   return (
