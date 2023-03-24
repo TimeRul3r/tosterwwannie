@@ -5,78 +5,69 @@ import { useState } from "react";
 const rounds = [
   // To jest objekt
   {
-    // question = klucz 
+    // question = klucz
     // "Pytanie1" = wartość
     question: "Pytanie1",
     options: [
       // To jest objekt
-    {
-      text: "odpowiedź 1",
-      isCorrect: false,
-
-    }, 
-    {
+      {
+        text: "odpowiedź 1",
+        isCorrect: false,
+      },
+      {
         text: "odpowiedź 2",
-        isCorrect: true
-      }
-    ]
+        isCorrect: true,
+      },
+    ],
   },
   {
-    // question = klucz 
+    // question = klucz
     // "Pytanie1" = wartość
     question: "Pytanie2",
     options: [
       // To jest objekt
-    {
-      text: "odpowiedź 1",
-      isCorrect: false,
-
-    }, 
-    {
+      {
+        text: "odpowiedź 1",
+        isCorrect: false,
+      },
+      {
         text: "odpowiedź 2",
-        isCorrect: true
-      }
-    ]
+        isCorrect: true,
+      },
+    ],
   },
   {
-    // question = klucz 
+    // question = klucz
     // "Pytanie1" = wartość
     question: "Pytanie3",
     options: [
       // To jest objekt
-    {
-      text: "odpowiedź 1 ",
-      isCorrect: false,
-
-    }, 
-    {
+      {
+        text: "odpowiedź 1 ",
+        isCorrect: false,
+      },
+      {
         text: "odpowiedź 2",
-        isCorrect: true
-      }
-    ]
+        isCorrect: true,
+      },
+    ],
   },
-  // 
+  //
 ];
 
-
-
-
-
-
-
 function App() {
-  const [currentRound, setCurrentRound] = useState(0)
- 
+  const [currentRound, setCurrentRound] = useState(0);
+
   const handleChooseOption = (isCorrect) => {
     console.log("Wybrałem opcje ?", isCorrect);
 
-    if(isCorrect && currentRound < rounds.length -1)
-            setCurrentRound((prev) => prev + 1);
-  }
+    if (isCorrect && currentRound < rounds.length - 1)
+      setCurrentRound((prev) => prev + 1);
+  };
 
   return (
     <div>
-      <Round round={rounds[currentRound]} chooseOption={handleChooseOption}  />
+      <Round round={rounds[currentRound]} chooseOption={handleChooseOption} />
     </div>
   );
 }
