@@ -11,11 +11,11 @@ const rounds = [
     options: [
       // To jest objekt
       {
-        text: "odpowiedź 1",
+        text: "odpowiedź1",
         isCorrect: false,
       },
       {
-        text: "odpowiedź 2",
+        text: "odpowiedź2",
         isCorrect: true,
       },
     ],
@@ -27,11 +27,11 @@ const rounds = [
     options: [
       // To jest objekt
       {
-        text: "odpowiedź 1",
+        text: "odpowiedź1",
         isCorrect: false,
       },
       {
-        text: "odpowiedź 2",
+        text: "odpowiedź2",
         isCorrect: true,
       },
     ],
@@ -43,11 +43,11 @@ const rounds = [
     options: [
       // To jest objekt
       {
-        text: "odpowiedź 1 ",
+        text: "odpowiedź1 ",
         isCorrect: false,
       },
       {
-        text: "odpowiedź 2",
+        text: "odpowiedź2",
         isCorrect: true,
       },
     ],
