@@ -3,30 +3,25 @@ import { Round, Profile2 } from "./components/molecules/Round";
 import { useState } from "react";
 
 const rounds = [
-  // To jest objekt
   {
-    // question = klucz 
-    // "Pytanie1" = wartość
-    question: "Pytanie1",
+    id: 0,
+    question: "Jak się dostać do 2 elementu w tablicy ?",
     options: [
-      // To jest objekt
     {
-      text: "odpowiedź 1",
+      text: "array[2]",
       isCorrect: false,
 
     }, 
     {
-        text: "odpowiedź 2",
+        text: "array[1]",
         isCorrect: true
       }
     ]
   },
   {
-    // question = klucz 
-    // "Pytanie1" = wartość
+    id: 1,
     question: "Pytanie2",
     options: [
-      // To jest objekt
     {
       text: "odpowiedź 1",
       isCorrect: false,
@@ -39,11 +34,9 @@ const rounds = [
     ]
   },
   {
-    // question = klucz 
-    // "Pytanie1" = wartość
+    id: 2,
     question: "Pytanie3",
     options: [
-      // To jest objekt
     {
       text: "odpowiedź 1 ",
       isCorrect: false,
@@ -55,28 +48,57 @@ const rounds = [
       }
     ]
   },
-  // 
+  {
+    id: 3,
+    question: "Pytanie4",
+    options: [
+    {
+      text: "odpowiedź 4 ",
+      isCorrect: false,
+    }, 
+    {
+        text: "odpowiedź 5",
+        isCorrect: true
+      }
+    ]
+  },
 ];
-
-
-
-
 
 
 
 function App() {
   const [currentRound, setCurrentRound] = useState(0)
+  const [userMove, setUserMove] = useState(undefined)
+  const [gameStatus, setGameStatus] = useState("STARTED")
  
-  const handleChooseOption = (isCorrect) => {
-    console.log("Wybrałem opcje ?", isCorrect);
+  const handleChooseOption = (option) => {
+    setUserMove({
+      roundId: currentRound,
+      option
+    })
 
-    if(isCorrect && currentRound < rounds.length -1)
-            setCurrentRound((prev) => prev + 1);
+
+
+    setTimeout(() => {
+      if(option.isCorrect && currentRound < rounds.length -1){
+        setCurrentRound((prev) => prev + 1);
+        
+        return;
+      }
+  
+      setGameStatus("FINISHED")
+      
+    }, 2000)
   }
 
   return (
     <div>
-      <Round round={rounds[currentRound]} chooseOption={handleChooseOption}  />
+      {gameStatus !== "FINISHED" && <Round move={userMove} round={rounds[currentRound]} chooseOption={handleChooseOption}  />}
+      {gameStatus === "FINISHED" && <div>Gra jest skończona</div>}
+
+      {/* pokazywanie odpowiedzi przez 5s a po sekunach zmieni nam się dopiero runda */}
+      {/* reset gry */}
+      
     </div>
   );
 }
