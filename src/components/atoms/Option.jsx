@@ -1,5 +1,3 @@
-export const Option = ({text, isCorrect}) => { 
-    return <div>{text}</div>;
-}
-
- 
+export const Option = ({ text, isCorrect }) => {
+  return <div>{text}</div>;
+};
